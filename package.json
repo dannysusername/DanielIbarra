@@ -1,0 +1,16 @@
+{
+  "name": "daniel-ibarra-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daniel Ibarra's portfolio: a static site served on Heroku.",
+  "scripts": {
+    "export": "python3 ../../.claude/skills/career-sync/export_portfolio.py",
+    "start": "serve . --listen ${PORT:-5050} --no-clipboard"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

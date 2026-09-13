@@ -1,25 +1,69 @@
-Portfolio README
-Overview
-This personal portfolio website showcases professional projects, skills, and experience as a software engineer. Designed and prototyped in Figma, then implemented with modern web technologies for a responsive and interactive user experience.
-Features
+# Daniel Ibarra — Portfolio
 
-Responsive layout adapting to various screen sizes.
-Sections for about, projects, skills, and contact.
-Interactive elements like smooth scrolling and hover effects using JavaScript.
-Clean, modern design emphasizing usability and accessibility.
+**It's live — just open it in your browser:**
 
-Tech Stack
+### 👉 https://portfoliosite-f324a95ed6cd.herokuapp.com/
 
-Design: Figma
-Frontend: HTML5, CSS3 (with Flexbox/Grid for layouts), JavaScript (vanilla for interactions)
+A single-page portfolio: who I am, the projects I've built, my stack, and how to reach me. No install, nothing to download — the link above is the whole thing.
 
-Usage
+---
 
-View the portfolio project at -----------> https://dannysusername.github.io/Portfolio/ <----------
+## What it is
 
-Screenshots
-(Add screenshots of the homepage, projects section, etc.)
-Contributing
-This is a personal project, but suggestions for improvements are welcome via issues.
-License
-MIT License - see LICENSE for details.
+A self-contained personal portfolio for Daniel Ibarra, a backend developer and computer-science student. One page, with:
+
+- **About** — short intro and a profile card.
+- **Skills** — animated proficiency meters (Java, Python, JavaScript, PostgreSQL) plus categorized tech chips grounded in real project work.
+- **Projects** — Aviary, Deadhead, RapidAid, Compass, and Pit Stop, each with its app icon, description, tech tags, and live + GitHub links.
+- **Certifications** — each credential with a verify link.
+- **Work experience** — each job with its logo (linked to the company's LinkedIn), plus an "open to opportunities" panel.
+- **Education** — FIU and Christopher Columbus High School, each linked to its LinkedIn page.
+- **Contact** — email, GitHub, LinkedIn, and a downloadable résumé.
+
+The top nav collapses to a hamburger menu on screens under 900px, so it reads well on mobile.
+
+## Featured projects
+
+| Project | What it is | Live | Code |
+|---|---|---|---|
+| **Aviary** | Aircraft maintenance & flight-hours tracker for general-aviation owners | [open](https://aviarist-d300b0c36379.herokuapp.com/login) | [repo](https://github.com/dannysusername/Aviary) |
+| **Deadhead** | Charter trip optimizer: the cheapest way to fly a week of client trips | [open](https://deadhead-planner-71dc1c210944.herokuapp.com/login) | [repo](https://github.com/dannysusername/Deadhead) |
+| **RapidAid** | Disaster-relief aid-matching app with AI request categorization | [open](https://main.d2h3lh72uw4b1b.amplifyapp.com) | [repo](https://github.com/dannysusername/RapidAId) |
+| **Compass** | School task tracker that parses syllabus PDFs into a calendar | [open](https://dannibar-compass-44cf6055d5e3.herokuapp.com/) | [repo](https://github.com/dannysusername/Compass) |
+| **Pit Stop** | Team capstone: collaborative car maintenance tracker with vehicle sharing | [open](https://pitstop-8463842bfa02.herokuapp.com) | [repo](https://github.com/team-PitStop/PitStop) |
+
+---
+
+## Editing
+
+The design source is **[Portfolio.dc.html](Portfolio.dc.html)**, a Claude Design canvas: markup with inline styles, a `<helmet>` style block, and a small component script run by the design tool. Browsers can't run that file directly, so the page actually served is **[index.html](index.html)**, generated from it:
+
+```bash
+npm run export     # runs career-sync's export_portfolio.py
+```
+
+- **Never hand-edit `index.html`.** Change `Portfolio.dc.html`, then re-export.
+- **Certifications, work experience, and education** are generated from the career-sync registry: `sync_profile.py` writes them into the canvas between `career-sync` markers.
+- **Assets** — images in [images/](images/), résumé at [Daniel_Ibarra_CV.pdf](Daniel_Ibarra_CV.pdf) (a copy of the approved résumé).
+
+**Preview locally:**
+
+```bash
+npm install
+npm start          # http://localhost:5050
+```
+
+## Deployment
+
+Hosted on **Heroku** as a static site: `npm start` runs [serve](https://github.com/vercel/serve) on the port Heroku assigns. No build step.
+
+| Environment | App | URL |
+|---|---|---|
+| Production | `portfoliosite` (eco dyno) | https://portfoliosite-f324a95ed6cd.herokuapp.com/ |
+
+- **Deploy:** export, commit, then `git push heroku main` (remote `https://git.heroku.com/portfoliosite.git`).
+- ⚠️ Eco dynos sleep when idle, so the first visit after a quiet spell takes a few seconds.
+
+---
+
+© Daniel Ibarra — personal project.
