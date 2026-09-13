@@ -20,7 +20,7 @@ Frontend: HTML5, CSS3 (with Flexbox/Grid for layouts), JavaScript (vanilla for i
 
 Usage
 
-View the portfolio project at -----------> https://dannysusername.github.io/Portfolio/ <----------
+View the portfolio project at -----------> dannysusername.github.io/Portfolio/ <----------
 
 Contributing
 This is a personal project, but suggestions for improvements are welcome via issues.
