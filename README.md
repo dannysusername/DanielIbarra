@@ -8,6 +8,14 @@ A single-page portfolio: who I am, the projects I've built, my stack, and how to
 
 ---
 
+## About me
+
+Hello! My name is Daniel Ibarra. I am a student at Florida International University pursuing a Bachelor of Science in Computer Science, with an expected graduation in Summer 2027. My main experience is in Java, Spring, PostgreSQL, HTML, CSS, and JavaScript. I love building things that are useful for myself and others, so I have dabbled in tons of other languages and technologies.
+
+My main focus is to become a backend software engineer, with a goal of working at SpaceX because their goal of going to Mars fascinates me. I am specializing in backend web development using Java, Spring, PostgreSQL, and CI/CD. I have built multiple Spring Boot applications and deployed them on Heroku.
+
+I enjoy all sorts of outdoor and indoor activities like sailing, hiking, and swimming. I like building home automation projects for my family using Raspberry Pis.
+
 ## What it is
 
 A self-contained personal portfolio for Daniel Ibarra, a backend developer and computer-science student. One page, with:
