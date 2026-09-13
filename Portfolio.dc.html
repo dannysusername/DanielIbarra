@@ -8,6 +8,9 @@
 <body>
 <x-dc>
 <helmet>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -90,7 +93,6 @@ a{color:inherit}
     <div style="position:absolute;bottom:-160px;right:-80px;width:600px;height:600px;background:radial-gradient(circle,rgba(31,229,255,.16),transparent 68%);filter:blur(60px);animation:glowB 18s ease-in-out infinite;"></div>
     <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 40px;width:100%;display:flex;gap:56px;align-items:center;flex-wrap:wrap;">
       <div style="flex:1.5;min-width:340px;">
-        <div ref="{{ termRef }}" style="white-space:pre-wrap;font-size:14px;line-height:1.8;color:#6f6f88;min-height:150px;margin-bottom:14px;"></div>
         <div style="font-weight:800;font-size:clamp(64px,9vw,108px);line-height:.88;letter-spacing:-.03em;margin-bottom:20px;">
           <div style="color:#e9e9f2;">DANIEL</div>
           <div style="color:#ff2bd6;text-shadow:0 0 30px rgba(255,43,214,.45);">IBARRA<span style="display:inline-block;width:clamp(28px,4vw,46px);height:14px;background:#1fe5ff;margin-left:14px;box-shadow:0 0 16px #1fe5ff;animation:blink 1s steps(1) infinite;"></span></div>
@@ -159,67 +161,51 @@ a{color:inherit}
         <span style="font-size:11px;letter-spacing:.2em;color:#5f5f78;">[ 0x02 ]</span>
       </div>
 
-      <!-- headline meters -->
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:26px 48px;margin-bottom:60px;">
-        <div data-reveal=""><div style="display:flex;justify-content:space-between;font-size:12px;color:#9a9ab0;letter-spacing:.08em;margin-bottom:8px;"><span>JAVA</span><span style="color:#1fe5ff;">88</span></div><div style="height:7px;background:rgba(120,140,180,.14);overflow:hidden;"><div data-meter="" data-w="88" style="height:100%;width:88%;background:linear-gradient(90deg,#1fe5ff,#ff2bd6);transition:width 1.2s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 12px rgba(31,229,255,.3);"></div></div></div>
-        <div data-reveal="" data-reveal-delay="80"><div style="display:flex;justify-content:space-between;font-size:12px;color:#9a9ab0;letter-spacing:.08em;margin-bottom:8px;"><span>PYTHON</span><span style="color:#1fe5ff;">82</span></div><div style="height:7px;background:rgba(120,140,180,.14);overflow:hidden;"><div data-meter="" data-w="82" style="height:100%;width:82%;background:linear-gradient(90deg,#1fe5ff,#ff2bd6);transition:width 1.2s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 12px rgba(31,229,255,.3);"></div></div></div>
-        <div data-reveal="" data-reveal-delay="160"><div style="display:flex;justify-content:space-between;font-size:12px;color:#9a9ab0;letter-spacing:.08em;margin-bottom:8px;"><span>JAVASCRIPT</span><span style="color:#1fe5ff;">80</span></div><div style="height:7px;background:rgba(120,140,180,.14);overflow:hidden;"><div data-meter="" data-w="80" style="height:100%;width:80%;background:linear-gradient(90deg,#1fe5ff,#ff2bd6);transition:width 1.2s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 12px rgba(31,229,255,.3);"></div></div></div>
-        <div data-reveal="" data-reveal-delay="240"><div style="display:flex;justify-content:space-between;font-size:12px;color:#9a9ab0;letter-spacing:.08em;margin-bottom:8px;"><span>POSTGRESQL</span><span style="color:#1fe5ff;">78</span></div><div style="height:7px;background:rgba(120,140,180,.14);overflow:hidden;"><div data-meter="" data-w="78" style="height:100%;width:78%;background:linear-gradient(90deg,#1fe5ff,#ff2bd6);transition:width 1.2s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 12px rgba(31,229,255,.3);"></div></div></div>
-      </div>
-
-      <!-- categorized chips -->
+      <!-- skills: generated from the résumé's Technical Skills by career-sync sync_profile.py -->
       <div style="display:flex;flex-direction:column;gap:30px;">
+        <!-- career-sync:skills:start -->
         <div data-reveal="" style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;">
           <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// LANGUAGES</div>
           <div style="flex:1;min-width:260px;display:flex;gap:10px;flex-wrap:wrap;">
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Java</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Python</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">JavaScript</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">SQL</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">HTML</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">CSS</span>
+            <span data-skill="Java" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Java</span>
+            <span data-skill="JavaScript" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">JavaScript</span>
+            <span data-skill="HTML/CSS" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">HTML/CSS</span>
           </div>
         </div>
         <div data-reveal="" style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid rgba(120,140,180,.1);padding-top:30px;">
           <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// FRAMEWORKS</div>
           <div style="flex:1;min-width:260px;display:flex;gap:10px;flex-wrap:wrap;">
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Spring Boot</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">FastAPI</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">React</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Vite</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Thymeleaf</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">JPA / Hibernate</span>
+            <span data-skill="Spring Boot" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Spring Boot</span>
           </div>
         </div>
         <div data-reveal="" style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid rgba(120,140,180,.1);padding-top:30px;">
-          <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// DATA &amp; INFRA</div>
+          <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// DEVELOPER TOOLS</div>
           <div style="flex:1;min-width:260px;display:flex;gap:10px;flex-wrap:wrap;">
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">PostgreSQL</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">SQLite</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">H2</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Heroku</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">AWS Amplify</span>
+            <span data-skill="Git" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Git</span>
+            <span data-skill="GitHub" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">GitHub</span>
+            <span data-skill="VS Code" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">VS Code</span>
+            <span data-skill="Figma" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Figma</span>
           </div>
         </div>
         <div data-reveal="" style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid rgba(120,140,180,.1);padding-top:30px;">
-          <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// APIS &amp; AI</div>
-          <div style="flex:1;min-width:260px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">REST APIs</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Google Gemini</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">xAI Grok</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Anthropic Claude</span>
-          </div>
-        </div>
-        <div data-reveal="" style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid rgba(120,140,180,.1);padding-top:30px;">
-          <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// TOOLS</div>
+          <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// DATABASES &amp; CLOUD</div>
           <div style="flex:1;min-width:260px;display:flex;gap:10px;flex-wrap:wrap;">
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Git</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">GitHub Actions</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Spring Security</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Maven</span>
-            <span style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Postman</span>
+            <span data-skill="PostgreSQL" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">PostgreSQL</span>
+            <span data-skill="H2" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">H2</span>
+            <span data-skill="Heroku" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Heroku</span>
+            <span data-skill="AWS" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">AWS</span>
           </div>
         </div>
+        <div data-reveal="" style="display:flex;gap:24px;flex-wrap:wrap;align-items:baseline;border-top:1px solid rgba(120,140,180,.1);padding-top:30px;">
+          <div style="width:170px;flex:none;font-size:11px;letter-spacing:.16em;color:#ff2bd6;">// BACKEND &amp; APIS</div>
+          <div style="flex:1;min-width:260px;display:flex;gap:10px;flex-wrap:wrap;">
+            <span data-skill="REST APIs" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">REST APIs</span>
+            <span data-skill="HTTP/HTTPS" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">HTTP/HTTPS</span>
+            <span data-skill="Cookie/Session-based Authentication" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">Cookie/Session-based Authentication</span>
+            <span data-skill="LLM Integration (Claude, Gemini, Grok)" style="font-size:13px;color:#c9c9d8;border:1px solid rgba(120,140,180,.22);background:rgba(13,13,22,.4);padding:9px 14px;transition:all .2s;" style-hover="border-color:#1fe5ff;color:#1fe5ff;background:rgba(31,229,255,.07);box-shadow:0 0 16px rgba(31,229,255,.15);">LLM Integration (Claude, Gemini, Grok)</span>
+          </div>
+        </div>
+        <!-- career-sync:skills:end -->
       </div>
 
     </div>
@@ -564,7 +550,7 @@ a{color:inherit}
       <div style="display:flex;gap:56px;flex-wrap:wrap;align-items:flex-start;">
         <div data-reveal="" style="flex:1.3;min-width:320px;">
           <h2 style="margin:0 0 22px;font-size:clamp(40px,6vw,68px);font-weight:800;line-height:1;letter-spacing:-.03em;color:#e9e9f2;text-wrap:balance;">LET'S <span style="color:#ff2bd6;text-shadow:0 0 28px rgba(255,43,214,.4);">BUILD.</span></h2>
-          <p style="margin:0 0 34px;font-size:16px;line-height:1.7;color:#9a9ab0;max-width:520px;text-wrap:pretty;">Looking for backend / software engineering internships and work experience. If you're building something on the edge of what's possible, let's talk.</p>
+          <p style="margin:0 0 34px;font-size:16px;line-height:1.7;color:#9a9ab0;max-width:520px;text-wrap:pretty;">Looking for backend / software engineering internships and work experience.</p>
           <div style="display:flex;gap:16px;flex-wrap:wrap;">
             <a href="mailto:dannibar201@gmail.com" style="text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.08em;padding:16px 26px;color:#07070d;background:#ff2bd6;clip-path:polygon(0 0,100% 0,100% calc(100% - 11px),calc(100% - 11px) 100%,0 100%);box-shadow:0 0 26px rgba(255,43,214,.4);" style-hover="background:#1fe5ff;box-shadow:0 0 32px rgba(31,229,255,.6);animation:glitchSkew .3s steps(3,end) infinite;">EMAIL ME →</a>
             <a href="./Daniel_Ibarra_CV.pdf" download="" target="_blank" rel="noopener" style="text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.08em;padding:16px 26px;color:#1fe5ff;border:1px solid rgba(31,229,255,.5);clip-path:polygon(11px 0,100% 0,100% 100%,0 100%,0 11px);" style-hover="background:rgba(31,229,255,.1);border-color:#1fe5ff;">DOWNLOAD RESUME ↓</a>
