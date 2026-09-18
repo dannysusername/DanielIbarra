@@ -26,6 +26,7 @@ A self-contained personal portfolio for Daniel Ibarra, a backend developer and c
 - **Certifications** — each credential with a verify link.
 - **Work experience** — each job with its logo (linked to the company's LinkedIn), plus an "open to opportunities" panel.
 - **Education** — FIU and Christopher Columbus High School, each linked to its LinkedIn page.
+- **Organizations** — INIT, the student tech community at FIU, with its Ignite Program mentorship listed under it.
 - **Contact** — email, GitHub, LinkedIn, and a downloadable résumé.
 
 The top nav collapses to a hamburger menu on screens under 900px, so it reads well on mobile.
@@ -51,7 +52,7 @@ npm run export     # runs career-sync's export_portfolio.py
 ```
 
 - **Never hand-edit `index.html`.** Change `Portfolio.dc.html`, then re-export.
-- **Certifications, work experience, and education** are generated from the career-sync registry: `sync_profile.py` writes them into the canvas between `career-sync` markers.
+- **Certifications, work experience, education, and organizations** are generated from the career-sync registry: `sync_profile.py` writes them into the canvas between `career-sync` markers.
 - **Assets** — images in [images/](images/), résumé at [Daniel_Ibarra_CV.pdf](Daniel_Ibarra_CV.pdf) (a copy of the approved résumé).
 
 **Preview locally:**
