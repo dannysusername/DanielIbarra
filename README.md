@@ -53,7 +53,7 @@ npm run export     # runs career-sync's export_portfolio.py
 
 - **Never hand-edit `index.html`.** Change `Portfolio.dc.html`, then re-export.
 - **Certifications, work experience, education, and organizations** are generated from the career-sync registry: `sync_profile.py` writes them into the canvas between `career-sync` markers.
-- **Assets** — images in [images/](images/), résumé at [Daniel_Ibarra_CV.pdf](Daniel_Ibarra_CV.pdf) (a copy of the approved résumé).
+- **Assets** — images in [images/](images/), résumé at [Daniel_Ibarra_Resume.pdf](Daniel_Ibarra_Resume.pdf) (a copy of the approved résumé).
 
 **Preview locally:**
 
