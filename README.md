@@ -35,7 +35,7 @@ The top nav collapses to a hamburger menu on screens under 900px, so it reads we
 
 | Project | What it is | Live | Code |
 |---|---|---|---|
-| **Aviary** | Aircraft maintenance & flight-hours tracker for general-aviation owners | [open](https://aviarist-d300b0c36379.herokuapp.com/login) | [repo](https://github.com/dannysusername/Aviary) |
+| **Aviary** | Aircraft maintenance & flight-hours tracker for general-aviation owners | [open](https://aviary.danielibarra.com) | [repo](https://github.com/dannysusername/Aviary) |
 | **Deadhead** | Charter trip optimizer: the cheapest way to fly a week of client trips | [open](https://deadhead-planner-71dc1c210944.herokuapp.com/login) | [repo](https://github.com/dannysusername/Deadhead) |
 | **RapidAid** | Disaster-relief aid-matching app with AI request categorization | [open](https://main.d2h3lh72uw4b1b.amplifyapp.com) | [repo](https://github.com/dannysusername/RapidAId) |
 | **Compass** | School task tracker that parses syllabus PDFs into a calendar | [open](https://dannibar-compass-44cf6055d5e3.herokuapp.com/) | [repo](https://github.com/dannysusername/Compass) |
