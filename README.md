@@ -2,7 +2,7 @@
 
 **It's live — just open it in your browser:**
 
-### 👉 https://portfoliosite-f324a95ed6cd.herokuapp.com/
+### 👉 https://danielibarra.com
 
 A single-page portfolio: who I am, the projects I've built, my stack, and how to reach me. No install, nothing to download — the link above is the whole thing.
 
@@ -36,10 +36,10 @@ The top nav collapses to a hamburger menu on screens under 900px, so it reads we
 | Project | What it is | Live | Code |
 |---|---|---|---|
 | **Aviary** | Aircraft maintenance & flight-hours tracker for general-aviation owners | [open](https://aviary.danielibarra.com) | [repo](https://github.com/dannysusername/Aviary) |
-| **Deadhead** | Charter trip optimizer: the cheapest way to fly a week of client trips | [open](https://deadhead-planner-71dc1c210944.herokuapp.com/login) | [repo](https://github.com/dannysusername/Deadhead) |
+| **Deadhead** | Charter trip optimizer: the cheapest way to fly a week of client trips | [open](https://deadhead.danielibarra.com) | [repo](https://github.com/dannysusername/Deadhead) |
 | **RapidAid** | Disaster-relief aid-matching app with AI request categorization | [open](https://main.d2h3lh72uw4b1b.amplifyapp.com) | [repo](https://github.com/dannysusername/RapidAId) |
-| **Compass** | School task tracker that parses syllabus PDFs into a calendar | [open](https://dannibar-compass-44cf6055d5e3.herokuapp.com/) | [repo](https://github.com/dannysusername/Compass) |
-| **Pit Stop** | Team capstone: collaborative car maintenance tracker with vehicle sharing | [open](https://pitstop-8463842bfa02.herokuapp.com) | [repo](https://github.com/team-PitStop/PitStop) |
+| **Compass** | School task tracker that parses syllabus PDFs into a calendar | [open](https://compass.danielibarra.com) | [repo](https://github.com/dannysusername/Compass) |
+| **Pit Stop** | Team capstone: collaborative car maintenance tracker with vehicle sharing | [open](https://pitstop.danielibarra.com) | [repo](https://github.com/team-PitStop/PitStop) |
 
 ---
 
@@ -68,7 +68,7 @@ Hosted on **Heroku** as a static site: `npm start` runs [serve](https://github.c
 
 | Environment | App | URL |
 |---|---|---|
-| Production | `portfoliosite` (eco dyno) | https://portfoliosite-f324a95ed6cd.herokuapp.com/ |
+| Production | `portfoliosite` (eco dyno) | https://danielibarra.com |
 
 - **Deploy:** export, commit, then `git push heroku main` (remote `https://git.heroku.com/portfoliosite.git`).
 - ⚠️ Eco dynos sleep when idle, so the first visit after a quiet spell takes a few seconds.
