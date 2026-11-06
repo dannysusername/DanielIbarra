@@ -22,7 +22,7 @@ A self-contained personal portfolio for Daniel Ibarra, a backend developer and c
 
 - **About** — short intro and a profile card.
 - **Skills** — animated proficiency meters (Java, Python, JavaScript, PostgreSQL) plus categorized tech chips grounded in real project work.
-- **Projects** — Aviary, Deadhead, RapidAid, Compass, and Pit Stop, each with its app icon, description, tech tags, and live + GitHub links.
+- **Projects** — Aviary, Deadhead, RapidAid, Compass, Pit Stop, and Photo Frame, each with its app icon (screenshots for Photo Frame), description, tech tags, and live + GitHub links.
 - **Certifications** — each credential with a verify link.
 - **Work experience** — each job with its logo (linked to the company's LinkedIn), plus an "open to opportunities" panel.
 - **Education** — FIU and Christopher Columbus High School, each linked to its LinkedIn page.
@@ -40,6 +40,7 @@ The top nav collapses to a hamburger menu on screens under 900px, so it reads we
 | **RapidAid** | Disaster-relief aid-matching app with AI request categorization | [open](https://main.d2h3lh72uw4b1b.amplifyapp.com) | [repo](https://github.com/dannysusername/RapidAId) |
 | **Compass** | School task tracker that parses syllabus PDFs into a calendar | [open](https://compass.danielibarra.com) | [repo](https://github.com/dannysusername/Compass) |
 | **Pit Stop** | Team capstone: collaborative car maintenance tracker with vehicle sharing | [open](https://pitstop.danielibarra.com) | [repo](https://github.com/team-PitStop/PitStop) |
+| **Photo Frame** | Raspberry Pi photo frame and household kiosk, run from a phone on the home wi-fi | runs on a home Pi | [repo](https://github.com/dannysusername/photoframe) |
 
 ---
 
