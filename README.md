@@ -23,6 +23,7 @@ A self-contained personal portfolio for Daniel Ibarra, a backend developer and c
 - **About** — short intro and a profile card.
 - **Skills** — animated proficiency meters (Java, Python, JavaScript, PostgreSQL) plus categorized tech chips grounded in real project work.
 - **Projects** — Aviary, Deadhead, RapidAid, Compass, Pit Stop, and Photo Frame, each with its app icon (screenshots for Photo Frame), description, tech tags, and live + GitHub links.
+- **Aviary live stats** — a `[ LIVE STATS ]` panel under Aviary (deep link `#aviary-stats`) with live user, aircraft, flight, hours, and alert totals and a recent-signups feed, read from Aviary's public `GET /api/public/stats` when the panel is opened. If Aviary can't be reached, it shows the last numbers it loaded.
 - **Certifications** — each credential with a verify link.
 - **Work experience** — each job with its logo (linked to the company's LinkedIn), plus an "open to opportunities" panel.
 - **Education** — FIU and Christopher Columbus High School, each linked to its LinkedIn page.
